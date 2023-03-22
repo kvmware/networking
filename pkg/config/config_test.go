@@ -1,5 +1,5 @@
 /*
-C opyright 2022 The Knative Authors
+Copyright 2022 The Knative Authors
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -63,7 +63,7 @@ func TestConfiguration(t *testing.T) {
 		wantErr: false,
 		wantConfig: func() *Config {
 			c := defaultConfig()
-			c.DefaultIngressClass = "foo-ingress"
+			c.DefaultIngressClass = "foo-ingresss"
 			return c
 		}(),
 	}, {
