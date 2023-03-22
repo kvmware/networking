@@ -125,6 +125,10 @@ const (
 	// InternalEncryptionKey is the name of the configuration whether
 	// internal traffic is encrypted or not.
 	InternalEncryptionKey = "internal-encryption"
+
+	// InternalTrustKey is the name of the configuration whether
+	// internal traffic is encrypted and mutual trust achieved between the peers.
+	InternalTrustKey = "internal-trust"
 )
 
 // HTTPProtocol indicates a type of HTTP endpoint behavior
@@ -253,6 +257,10 @@ type Config struct {
 
 	// DefaultExternal specifies whether internal traffic is encrypted or not.
 	InternalEncryption bool
+
+	// InternalTrust specifies whether internal traffic is encrypted with mutual trust between peers.
+	// InternalTrust enforces InternalEncryption = true
+	InternalTrust bool
 }
 
 func defaultConfig() *Config {

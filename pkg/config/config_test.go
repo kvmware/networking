@@ -63,7 +63,7 @@ func TestConfiguration(t *testing.T) {
 		wantErr: false,
 		wantConfig: func() *Config {
 			c := defaultConfig()
-			c.DefaultIngressClass = "foo-ingress"
+			c.DefaultIngressClass = "foo-ingresss"
 			return c
 		}(),
 	}, {
